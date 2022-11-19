@@ -153,6 +153,9 @@ table {
 body {
   font-family: 'Red Hat Display', sans-serif;
   font-size: 16px;
+  display: flex;
+  justify-content: stretch;
+  align-items: stretch;
 }
 
 .container{
@@ -164,9 +167,9 @@ body {
   width: 100vw;
   background-image: url(images/pattern-background-desktop.svg);
   background-repeat: no-repeat;
-  background-position: absolute;
-  bottom: 66vh;
+  background-size: contain;
   background-color: var(--color-pale-blue);
+  
 }
 
 
@@ -175,6 +178,7 @@ body {
   flex-direction: column;
   height: var(--card-height);
   width: calc(var(--card-height)*.6);
+  box-shadow: 0px 10px 25px 0px rgba(111, 109, 112, 0.35);
 }
 
 .card-top {
